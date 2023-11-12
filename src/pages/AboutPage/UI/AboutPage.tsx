@@ -1,11 +1,12 @@
-
+import { ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutPage = () => {
-  return (
-    <div>
-      AboutPage
-    </div>
-  )
-}
+const {t} = useTranslation('about')
 
-export default AboutPage
+  return <div>
+    {t("Про нас") as ReactNode}
+  </div>;
+};
+
+export default AboutPage;

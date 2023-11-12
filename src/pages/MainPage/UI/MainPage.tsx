@@ -1,11 +1,11 @@
-
+import { ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const MainPage = () => {
-  return (
-    <div>
-      MainPage
-    </div>
-  )
-}
+  const { t } = useTranslation();
 
-export default MainPage
+  return <div>{t('Головна сторінка') as ReactNode}
+  </div>;
+};
+
+export default MainPage;
